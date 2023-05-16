@@ -40,4 +40,5 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapGet("/", () => "Hello World!");
 app.Run();
